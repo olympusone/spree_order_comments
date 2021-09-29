@@ -1,0 +1,7 @@
+<!-- insert_bottom '.line-item .line-item-name' -->
+
+<% if item.comments? %>
+    <div class="p-2 alert alert-light m-0 mt-1 text-left" role="alert">
+        <b><%= Spree.t(:comments) %>:</b> <%= item.comments %>
+    </div>
+<% end %>

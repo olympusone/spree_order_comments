@@ -1,0 +1,5 @@
+el:
+  spree:
+    comment: Σχόλιο
+    comments: Σχόλια
+    order_comments: Σχόλια Παραγγελίας

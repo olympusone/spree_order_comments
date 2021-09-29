@@ -1,0 +1,14 @@
+<!-- insert_after '.card' -->
+
+<% if @order.comments? %>
+    <div class="card mb-3">
+        <div class="card-header">
+            <h1 class="card-title mb-0 h5">
+                <%= Spree.t(:order_comments) %>
+            </h1>
+        </div>
+        <div class="card-body">
+            <%= @order.comments %>
+        </div>
+    </div>
+<% end %>

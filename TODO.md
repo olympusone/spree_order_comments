@@ -1,0 +1,1 @@
+1. Remove LineItemSerializer when it will be added to official spree repo and replace it with custom serializer and add api dependency to engine.rb
