@@ -23,12 +23,11 @@ env:
   - DB=postgres
 
 gemfile:
-  - gemfiles/spree_4_2.gemfile
   - gemfiles/spree_master.gemfile
 
 jobs:
   allow_failures:
-  - gemfile: gemfiles/spree_master.gemfile
+    - gemfile: gemfiles/spree_master.gemfile
 
 before_install:
   - mysql -u root -e "GRANT ALL ON *.* TO 'travis'@'%';"

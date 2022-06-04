@@ -14,11 +14,9 @@ module SpreeOrderComments
       Spree::PermittedAttributes.line_item_attributes << :comments
 
       Spree::Api::Dependencies.storefront_cart_serializer = 'CartSerializer'
-    end
 
-    # initializer 'spree_order_comments.environment', before: :load_config_initializers do |_app|
-    #   SpreeOrderComments::Config = SpreeOrderComments::Configuration.new
-    # end
+      config.spree.line_item_comparison_hooks.add 'compare_line_item_comments'
+    end
 
     def self.activate
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator*.rb')) do |c|
