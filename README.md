@@ -1,5 +1,7 @@
 # SpreeOrderComments
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/c91c5a5c9b66be0e1c93/maintainability)](https://codeclimate.com/github/olympusone/spree_order_comments/maintainability)
+
 With this GEM you can use comments field on order and on every line item.
 
 ## Installation
