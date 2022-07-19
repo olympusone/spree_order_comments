@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_order_comments'
   s.version     = SpreeOrderComments.version
-  s.summary     = ''
+  s.summary     = 'With this GEM you can use comments field on order and on every line item.'
   s.description = s.summary
   s.required_ruby_version = '>= 2.5'
 
