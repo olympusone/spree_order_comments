@@ -14,7 +14,6 @@ module SpreeOrderComments
       Spree::PermittedAttributes.line_item_attributes << :comments
 
       Spree::Api::Dependencies.storefront_cart_serializer = 'CartSerializer'
-      Spree::Api::Dependencies.storefront_store_serializer = 'StoreSerializer'
 
       config.spree.line_item_comparison_hooks.add 'compare_line_item_comments'
     end
